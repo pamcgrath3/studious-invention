@@ -33,9 +33,9 @@ def check(link):
     price = str(html.find("span", class_ = "a-offscreen"))
     endIndex2 = price.find("</span>")
     price = price[26:endIndex2]    
-    print("Current price: " + price + "\n")
+    print("Price: " + price + "\n")
 
-    with open("draft.txt", "a", encoding="utf-8") as draft:
+    with open("draft.txt", "a", encoding = "utf-8") as draft:
             draft.write(link)
             draft.write(title + "\n")
-            draft.write("Current price: " + price + "\n\n")
+            draft.write("Price: " + price + "\n\n")
