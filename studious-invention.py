@@ -1,14 +1,18 @@
 from urllib.request import urlopen, Request
-from bs4 import BeautifulSoup as bsoup
+from bs4 import BeautifulSoup
 import smtplib
+import sys
 
-def main():
+def main(email = ""):
+    draft = open("draft.txt", "w")
+    draft.close()
     with open("links.txt", "r") as file:
         lines = file.readlines()
         print("Scraping " + str(len(lines)) + " items from links.txt:\n")
         for link in lines:
             check(link)
-        email = input("\nRecipient email: ")
+        if email == "": 
+            email = input("\nRecipient email: ")
         s = smtplib.SMTP("smtp.gmail.com", 587)
         s.starttls()
         s.login("studiousinvention@gmail.com", "viesujixdvqczoja")
@@ -23,7 +27,7 @@ def main():
 def check(link):
     request = Request(link, headers={'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'})
     webpage = urlopen(request).read().decode('utf-8')
-    html = bsoup(webpage, "html.parser")
+    html = BeautifulSoup(webpage, "html.parser")
 
     title = str(html.find("span", class_ = "a-size-large product-title-word-break"))
     endIndex1 = title.find("       </span")
@@ -39,3 +43,10 @@ def check(link):
             draft.write(link)
             draft.write(title + "\n")
             draft.write("Price: " + price + "\n\n")
+
+if __name__ == "__main__":
+    if len(sys.argv) == 1:
+        main()
+    elif len(sys.argv) == 2:
+        main(sys.argv[1])
+    else: print("Too many arguments!")
