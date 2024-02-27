@@ -1,7 +1,20 @@
-# studious-invention
-Q3 Project Cybersecurity
+## Q3 Project Cybersecurity
 
-Automated Web Scraping and Email Report Script
+## Automated Web Scraping and Email Report Script
+
+## Write Up
+
+Our exploration into web development began as a research project, driven by our lack of prior knowledge on the topic. Several months ago, we embarked on a mission to understand the basics of HTML and CSS, starting from scratch.
+
+We immersed ourselves in tutorials and documentation, absorbing the fundamental concepts of web design one step at a time. Despite the initial challenges, each new lesson bolstered our understanding and propelled us forward.
+
+Motivated to put our learning into practice, we conceived the idea of creating a simulated login system. Starting with a basic static website, we gradually built a simple login form. Though rudimentary, this initial achievement marked a significant milestone in our journey.
+
+Eager to expand our skills, we delved deeper into backend development. Through further research and experimentation, we learned about Node.js and MySQL, essential technologies for creating dynamic web applications.
+
+The process was challenging, requiring dedication and perseverance. However, with persistence, we successfully transformed the static login form into a dynamic interface capable of user authentication and registration.
+
+This project, born out of curiosity and driven by a thirst for knowledge, exemplifies the power of self-directed learning. It serves as a reminder that with determination and exploration, even complex tasks can be tackled step by step
 
 This Python script automates the process of scraping product information from a list of URLs and emailing the results to a specified recipient. Here's a simplified overview of how it works:
 
@@ -32,3 +45,7 @@ Execution from Command Line:
 Users can execute the script from the command line by running python script_name.py recipient_email.
 If no recipient email is provided, the script prompts the user to enter one during execution.
 This script simplifies the process of scraping and emailing product information, making it suitable for users who want a straightforward solution without complex features. Users can customize it further according to their needs, such as adding error handling or expanding the scope of information scraped.
+
+## Sources
+- https://github.com/judz5/PyCrack
+- https://www.codecademy.com
