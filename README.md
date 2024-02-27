@@ -49,3 +49,6 @@ This script simplifies the process of scraping and emailing product information,
 ## Sources
 - https://github.com/judz5/PyCrack
 - https://www.codecademy.com
+- https://www.youtube.com/watch?v=e9oOj5jRHrM
+- https://www.youtube.com/channel/UCaKqU7lmR4wQ5Bj9F9E9i_Q
+- https://www.w3schools.com/nodejs/nodejs_mysql_insert.asp
