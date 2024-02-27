@@ -4,7 +4,7 @@
 
 ## Write Up
 
-Our exploration into web development began as a research project, driven by our lack of prior knowledge on the topic. Several months ago, we embarked on a mission to understand the basics of HTML and CSS, starting from scratch.
+Our exploration into web development began as a research project, driven by our lack of prior knowledge on the topic and coding in general. Several days ago, we embarked on a mission to understand the basics of HTML and CSS, starting from scratch.
 
 We immersed ourselves in tutorials and documentation, absorbing the fundamental concepts of web design one step at a time. Despite the initial challenges, each new lesson bolstered our understanding and propelled us forward.
 
@@ -14,8 +14,8 @@ Eager to expand our skills, we delved deeper into backend development. Through f
 
 The process was challenging, requiring dedication and perseverance. However, with persistence, we successfully transformed the static login form into a dynamic interface capable of user authentication and registration.
 
-This project, born out of curiosity and driven by a thirst for knowledge, exemplifies the power of self-directed learning. It serves as a reminder that with determination and exploration, even complex tasks can be tackled step by step
 
+## How it works
 This Python script automates the process of scraping product information from a list of URLs and emailing the results to a specified recipient. Here's a simplified overview of how it works:
 
 Importing Necessary Libraries:
