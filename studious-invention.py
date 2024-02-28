@@ -15,12 +15,12 @@ def main(email = ""):
             email = input("\nRecipient email: ")
         s = smtplib.SMTP("smtp.gmail.com", 587)
         s.starttls()
-        s.login("studiousinvention@gmail.com", "viesujixdvqczoja")
+        s.login("farazsalimii@gmail.com", "Farazhascat1$")
         with open("draft.txt", "r", encoding = "utf-8") as draft:
             body = draft.read()
             subject = "Report for " + str(len(lines)) + " links"
             full = f"Subject: {subject}\n\n{body}"
-            s.sendmail("studiousinvention@gmail.com", email, full.encode("utf-8"))
+            s.sendmail("farazsalimii@gmail.com", email, full.encode("utf-8"))
             print("Email has been sent.")
             s.quit()
   
